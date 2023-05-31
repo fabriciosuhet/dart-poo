@@ -8,7 +8,7 @@ class Camiseta {
 
   // Atributos
   String? tamanho;
-  String? cor;
+  String? _cor;
   String? marca;
 
   // Atributo de Classe
@@ -16,6 +16,13 @@ class Camiseta {
 
   // Métodos de Classe
   static String recuperarNome() => nome;
+
+  String? get cor => _cor;
+    set cor(String? cor) {
+    if (cor == 'Verde') {
+      throw Exception('Nao pode ser verde');
+    }
+  }
 
 
   // Funções dentro de classes 
@@ -26,5 +33,12 @@ class Camiseta {
     } else {
       return 'Pode lavar na máquina';
     }
+  }
+}
+
+class _Camiseta2{
+  void recuperarCor() {
+    var camiseta = Camiseta();
+    camiseta._cor = 'Verde';
   }
 }

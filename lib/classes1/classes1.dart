@@ -5,7 +5,7 @@ import 'package:dart_poo/classes1/camiseta.dart';
 void main () {
   var camisetaNike  = Camiseta();
   camisetaNike.tamanho = 'M';
-  camisetaNike.cor = 'Preta';
+  camisetaNike.cor = 'Verde';
   camisetaNike.marca = 'Nike';
 
   print(Camiseta.nome);
@@ -21,7 +21,7 @@ void main () {
 
   var camisetaAdidas  = Camiseta();
   camisetaAdidas.tamanho = 'M';
-  camisetaAdidas.cor = 'Preta';
+  camisetaAdidas.cor = 'Verde';
   camisetaAdidas.marca = 'Adidas';
 
   print('''
