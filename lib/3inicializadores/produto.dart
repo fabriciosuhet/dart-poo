@@ -17,7 +17,7 @@ class Produto {
   })  : _id = id,
         _preco = preco{
           print(_id);
-          print(preco);
+          print(_preco);
         }
 
   factory Produto.fabrica({
