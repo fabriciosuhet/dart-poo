@@ -4,8 +4,6 @@ class Gato extends Animal {
   Gato({required super.idade});
 
   @override
-  int calcularIdadeHumana() {
-    return idade * 15;
-  }
-
+  int calcularIdadeHumana() => idade * 15;
+  
 }
